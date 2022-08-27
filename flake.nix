@@ -7,7 +7,7 @@
   outputs = { self, nixpkgs, flake-utils }:
     let
       supportedSystems = {
-        "${flake-utils.lib.system.aarch64-darwin}" = "macos-x86_64";
+        "${flake-utils.lib.system.aarch64-darwin}" = "macos-aarch64";
         "${flake-utils.lib.system.x86_64-darwin}" = "macos-x86_64";
       };
     in
